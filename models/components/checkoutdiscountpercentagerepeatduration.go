@@ -3,7 +3,7 @@
 package components
 
 import (
-	"github.com/macrodeep/macropay-go/internal/utils"
+	"github.com/web3group/macropay-go-main/internal/utils"
 )
 
 // CheckoutDiscountPercentageRepeatDuration - Schema for a percentage discount that is applied on every invoice

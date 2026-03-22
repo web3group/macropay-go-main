@@ -8,7 +8,7 @@ Ref: https://docs.stripe.com/billing/customer/tax-ids#supported-tax-id
 
 ```go
 import (
-	"github.com/macrodeep/macropay-go/models/components"
+	"github.com/web3group/macropay-go-main/models/components"
 )
 
 value := components.TaxIDFormatAdNrt

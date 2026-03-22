@@ -5,8 +5,8 @@ package components
 import (
 	"errors"
 	"fmt"
-	"github.com/macrodeep/macropay-go/internal/utils"
-	"github.com/macrodeep/macropay-go/types"
+	"github.com/web3group/macropay-go-main/internal/utils"
+	"github.com/web3group/macropay-go-main/types"
 	"time"
 )
 

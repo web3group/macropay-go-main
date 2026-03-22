@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/macrodeep/macropay-go/optionalnullable"
-	"github.com/macrodeep/macropay-go/types"
+	"github.com/web3group/macropay-go-main/optionalnullable"
+	"github.com/web3group/macropay-go-main/types"
 )
 
 func GenerateURL(_ context.Context, serverURL, path string, pathParams interface{}, globals interface{}) (string, error) {

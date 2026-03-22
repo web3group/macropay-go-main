@@ -3,7 +3,7 @@
 package components
 
 import (
-	"github.com/macrodeep/macropay-go/internal/utils"
+	"github.com/web3group/macropay-go-main/internal/utils"
 )
 
 // DownloadableFileCreate - Schema to create a file to be associated with the downloadables benefit.

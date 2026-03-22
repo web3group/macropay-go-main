@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/macrodeep/macropay-go/types"
+	"github.com/web3group/macropay-go-main/types"
 )
 
 // UnionCandidate represents a candidate type during union deserialization

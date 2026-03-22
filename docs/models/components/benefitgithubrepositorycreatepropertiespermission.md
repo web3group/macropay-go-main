@@ -6,7 +6,7 @@ The permission level to grant. Read more about roles and their permissions on [G
 
 ```go
 import (
-	"github.com/macrodeep/macropay-go/models/components"
+	"github.com/web3group/macropay-go-main/models/components"
 )
 
 value := components.BenefitGitHubRepositoryCreatePropertiesPermissionPull

@@ -7,11 +7,11 @@ package macropaygo
 import (
 	"context"
 	"fmt"
-	"github.com/macrodeep/macropay-go/internal/config"
-	"github.com/macrodeep/macropay-go/internal/hooks"
-	"github.com/macrodeep/macropay-go/internal/utils"
-	"github.com/macrodeep/macropay-go/models/components"
-	"github.com/macrodeep/macropay-go/retry"
+	"github.com/web3group/macropay-go-main/internal/config"
+	"github.com/web3group/macropay-go-main/internal/hooks"
+	"github.com/web3group/macropay-go-main/internal/utils"
+	"github.com/web3group/macropay-go-main/models/components"
+	"github.com/web3group/macropay-go-main/retry"
 	"net/http"
 	"time"
 )
@@ -166,7 +166,7 @@ func New(opts ...SDKOption) *Macropay {
 	sdk := &Macropay{
 		SDKVersion: "0.15.0",
 		sdkConfiguration: config.SDKConfiguration{
-			UserAgent:  "speakeasy-sdk/go 0.15.0 2.856.1 0.1.0 github.com/macrodeep/macropay-go",
+			UserAgent:  "speakeasy-sdk/go 0.15.0 2.856.1 0.1.0 github.com/web3group/macropay-go-main",
 			ServerList: ServerList,
 		},
 		hooks: hooks.New(),

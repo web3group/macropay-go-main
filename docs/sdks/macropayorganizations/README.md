@@ -18,7 +18,7 @@ package main
 
 import(
 	"context"
-	macropaygo "github.com/macrodeep/macropay-go"
+	macropaygo "github.com/web3group/macropay-go-main"
 	"log"
 )
 

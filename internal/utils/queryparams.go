@@ -12,8 +12,8 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/macrodeep/macropay-go/optionalnullable"
-	"github.com/macrodeep/macropay-go/types"
+	"github.com/web3group/macropay-go-main/optionalnullable"
+	"github.com/web3group/macropay-go-main/types"
 )
 
 func PopulateQueryParams(_ context.Context, req *http.Request, queryParams interface{}, globals interface{}, allowEmptyValue map[string]struct{}) error {

@@ -15,7 +15,7 @@ import (
 	"reflect"
 	"regexp"
 
-	"github.com/macrodeep/macropay-go/optionalnullable"
+	"github.com/web3group/macropay-go-main/optionalnullable"
 )
 
 const (

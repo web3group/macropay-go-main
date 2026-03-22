@@ -4,8 +4,8 @@ package operations
 
 import (
 	"errors"
-	"github.com/macrodeep/macropay-go/internal/utils"
-	"github.com/macrodeep/macropay-go/retry"
+	"github.com/web3group/macropay-go-main/internal/utils"
+	"github.com/web3group/macropay-go-main/retry"
 	"time"
 )
 

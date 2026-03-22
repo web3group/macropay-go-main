@@ -3,7 +3,7 @@
 package components
 
 import (
-	"github.com/macrodeep/macropay-go/internal/utils"
+	"github.com/web3group/macropay-go-main/internal/utils"
 )
 
 // BenefitGitHubRepositorySubscriberProperties - Properties available to subscribers for a benefit of type `github_repository`.

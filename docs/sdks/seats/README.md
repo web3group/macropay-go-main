@@ -22,9 +22,9 @@ package main
 
 import(
 	"context"
-	macropaygo "github.com/macrodeep/macropay-go"
+	macropaygo "github.com/web3group/macropay-go-main"
 	"os"
-	"github.com/macrodeep/macropay-go/models/operations"
+	"github.com/web3group/macropay-go-main/models/operations"
 	"log"
 )
 
@@ -78,10 +78,10 @@ package main
 
 import(
 	"context"
-	macropaygo "github.com/macrodeep/macropay-go"
-	"github.com/macrodeep/macropay-go/models/components"
+	macropaygo "github.com/web3group/macropay-go-main"
+	"github.com/web3group/macropay-go-main/models/components"
 	"os"
-	"github.com/macrodeep/macropay-go/models/operations"
+	"github.com/web3group/macropay-go-main/models/operations"
 	"log"
 )
 
@@ -134,9 +134,9 @@ package main
 
 import(
 	"context"
-	macropaygo "github.com/macrodeep/macropay-go"
+	macropaygo "github.com/web3group/macropay-go-main"
 	"os"
-	"github.com/macrodeep/macropay-go/models/operations"
+	"github.com/web3group/macropay-go-main/models/operations"
 	"log"
 )
 
@@ -189,9 +189,9 @@ package main
 
 import(
 	"context"
-	macropaygo "github.com/macrodeep/macropay-go"
+	macropaygo "github.com/web3group/macropay-go-main"
 	"os"
-	"github.com/macrodeep/macropay-go/models/operations"
+	"github.com/web3group/macropay-go-main/models/operations"
 	"log"
 )
 
@@ -246,9 +246,9 @@ package main
 
 import(
 	"context"
-	macropaygo "github.com/macrodeep/macropay-go"
+	macropaygo "github.com/web3group/macropay-go-main"
 	"os"
-	"github.com/macrodeep/macropay-go/models/operations"
+	"github.com/web3group/macropay-go-main/models/operations"
 	"log"
 )
 

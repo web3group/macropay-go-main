@@ -59,7 +59,7 @@ go:
   multipartArrayFormat: legacy
   nullableOptionalWrapper: false
   outputModelSuffix: output
-  packageName: github.com/macrodeep/macropay-go
+  packageName: github.com/web3group/macropay-go-main
   respectRequiredFields: false
   respectTitlesForPrimitiveUnionMembers: false
   responseFormat: envelope-http

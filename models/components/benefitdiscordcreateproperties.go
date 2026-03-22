@@ -3,7 +3,7 @@
 package components
 
 import (
-	"github.com/macrodeep/macropay-go/internal/utils"
+	"github.com/web3group/macropay-go-main/internal/utils"
 )
 
 // BenefitDiscordCreateProperties - Properties to create a benefit of type `discord`.

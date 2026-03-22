@@ -8,7 +8,9 @@
       "Bash(sed -i '' -e 's/polar-oas/macropay-oas/g' -e 's/polar-oas-code-samples-go/macropay-oas-code-samples-go/g' .speakeasy/workflow.lock)",
       "Bash(sed -i '' -e 's/target: polar/target: macropay/g' .github/workflows/sdk_publish.yaml)",
       "Bash(git init:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git remote:*)",
+      "Bash(git branch:*)"
     ]
   }
 }

@@ -3,7 +3,7 @@
 package components
 
 import (
-	"github.com/macrodeep/macropay-go/internal/utils"
+	"github.com/web3group/macropay-go-main/internal/utils"
 )
 
 // BenefitMeterCreditCreateProperties - Properties for creating a benefit of type `meter_unit`.

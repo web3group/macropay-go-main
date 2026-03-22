@@ -3,8 +3,8 @@
 package macropaygo
 
 import (
-	"github.com/macrodeep/macropay-go/internal/config"
-	"github.com/macrodeep/macropay-go/internal/hooks"
+	"github.com/web3group/macropay-go-main/internal/config"
+	"github.com/web3group/macropay-go-main/internal/hooks"
 )
 
 type CustomerPortal struct {

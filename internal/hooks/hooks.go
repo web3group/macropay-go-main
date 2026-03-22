@@ -5,7 +5,7 @@ package hooks
 import (
 	"context"
 	"errors"
-	"github.com/macrodeep/macropay-go/internal/config"
+	"github.com/web3group/macropay-go-main/internal/config"
 	"net/http"
 )
 

@@ -1,4 +1,4 @@
-module github.com/macrodeep/macropay-go
+module github.com/web3group/macropay-go-main
 
 go 1.22
 

@@ -10,8 +10,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/macrodeep/macropay-go/optionalnullable"
-	"github.com/macrodeep/macropay-go/types"
+	"github.com/web3group/macropay-go-main/optionalnullable"
+	"github.com/web3group/macropay-go-main/types"
 )
 
 func populateForm(paramName string, explode bool, objType reflect.Type, objValue reflect.Value, delimiter string, defaultValue *string, allowEmptyValue map[string]struct{}, getFieldName func(reflect.StructField) string) url.Values {

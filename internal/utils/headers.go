@@ -9,7 +9,7 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/macrodeep/macropay-go/optionalnullable"
+	"github.com/web3group/macropay-go-main/optionalnullable"
 )
 
 func PopulateHeaders(_ context.Context, req *http.Request, headers interface{}, globals interface{}) {

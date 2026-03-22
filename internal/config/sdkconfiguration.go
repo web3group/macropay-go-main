@@ -4,7 +4,7 @@ package config
 
 import (
 	"context"
-	"github.com/macrodeep/macropay-go/retry"
+	"github.com/web3group/macropay-go-main/retry"
 	"net/http"
 	"time"
 )

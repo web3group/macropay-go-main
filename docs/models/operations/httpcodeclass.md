@@ -6,7 +6,7 @@ Filter by HTTP response code class (2xx, 3xx, 4xx, 5xx).
 
 ```go
 import (
-	"github.com/macrodeep/macropay-go/models/operations"
+	"github.com/web3group/macropay-go-main/models/operations"
 )
 
 value := operations.HTTPCodeClassTwoxx

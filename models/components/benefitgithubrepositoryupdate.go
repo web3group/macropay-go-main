@@ -5,7 +5,7 @@ package components
 import (
 	"errors"
 	"fmt"
-	"github.com/macrodeep/macropay-go/internal/utils"
+	"github.com/web3group/macropay-go-main/internal/utils"
 )
 
 type BenefitGitHubRepositoryUpdateMetadataType string

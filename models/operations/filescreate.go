@@ -3,7 +3,7 @@
 package operations
 
 import (
-	"github.com/macrodeep/macropay-go/models/components"
+	"github.com/web3group/macropay-go-main/models/components"
 )
 
 type FilesCreateResponse struct {

@@ -5,8 +5,8 @@ package operations
 import (
 	"errors"
 	"fmt"
-	"github.com/macrodeep/macropay-go/internal/utils"
-	"github.com/macrodeep/macropay-go/models/components"
+	"github.com/web3group/macropay-go-main/internal/utils"
+	"github.com/web3group/macropay-go-main/models/components"
 )
 
 type CustomersListQueryParamOrganizationIDFilterType string
