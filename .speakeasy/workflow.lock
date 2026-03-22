@@ -1,0 +1,43 @@
+speakeasyVersion: 1.750.0
+sources:
+    Macropay-OAS:
+        sourceNamespace: macropay-oas
+        sourceRevisionDigest: sha256:f3432f46f0dec190215a9684269e76599e6dbd4bf42015e0a4b1019a7482db6c
+        sourceBlobDigest: sha256:ce7f332530b851d7bdb41d9c1cfe4db4bc513a5d25c780c153c76a9aec2c6936
+        tags:
+            - latest
+            - 0.1.0
+targets:
+    macropay:
+        source: Macropay-OAS
+        sourceNamespace: macropay-oas
+        sourceRevisionDigest: sha256:f3432f46f0dec190215a9684269e76599e6dbd4bf42015e0a4b1019a7482db6c
+        sourceBlobDigest: sha256:ce7f332530b851d7bdb41d9c1cfe4db4bc513a5d25c780c153c76a9aec2c6936
+        codeSamplesNamespace: macropay-oas-code-samples-go
+        codeSamplesRevisionDigest: sha256:26e5daaab370a5d5111f3ce286ef1bd5779e6feaf20fdfd8b340eef0419d77ef
+workflow:
+    workflowVersion: 1.0.0
+    speakeasyVersion: latest
+    sources:
+        Macropay-OAS:
+            inputs:
+                - location: https://api.macropay.sh/openapi.json
+            overlays:
+                - location: https://raw.githubusercontent.com/macrodeep/macropay/main/sdk/overlays/security.yml
+                - location: https://raw.githubusercontent.com/macrodeep/macropay/main/sdk/overlays/type_parameter.yml
+                - location: https://raw.githubusercontent.com/macrodeep/macropay/main/sdk/overlays/read_only.yml
+                - location: https://raw.githubusercontent.com/macrodeep/macropay/main/sdk/overlays/event_discriminator.yml
+                - location: https://raw.githubusercontent.com/macrodeep/macropay/main/sdk/overlays/timezone_enum.yml
+                - location: https://raw.githubusercontent.com/macrodeep/macropay/main/sdk/overlays/event_metadata.yml
+            registry:
+                location: registry.speakeasyapi.dev/macropay/macropay/macropay-oas
+    targets:
+        macropay:
+            target: go
+            source: Macropay-OAS
+            codeSamples:
+                output: codeSamples.yaml
+                registry:
+                    location: registry.speakeasyapi.dev/macropay/macropay/macropay-oas-code-samples-go
+                labelOverride:
+                    fixedValue: Go (SDK)

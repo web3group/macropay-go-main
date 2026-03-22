@@ -1,0 +1,14 @@
+# ProductPriceMeteredUnitCreate
+
+Schema to create a metered price with a fixed unit price.
+
+
+## Fields
+
+| Field                                                                                             | Type                                                                                              | Required                                                                                          | Description                                                                                       |
+| ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| `AmountType`                                                                                      | `string`                                                                                          | :heavy_check_mark:                                                                                | N/A                                                                                               |
+| `PriceCurrency`                                                                                   | [*components.PresentmentCurrency](../../models/components/presentmentcurrency.md)                 | :heavy_minus_sign:                                                                                | N/A                                                                                               |
+| `MeterID`                                                                                         | `string`                                                                                          | :heavy_check_mark:                                                                                | The ID of the meter associated to the price.                                                      |
+| `UnitAmount`                                                                                      | [components.UnitAmount](../../models/components/unitamount.md)                                    | :heavy_check_mark:                                                                                | The price per unit in cents. Supports up to 12 decimal places.                                    |
+| `CapAmount`                                                                                       | `*int64`                                                                                          | :heavy_minus_sign:                                                                                | Optional maximum amount in cents that can be charged, regardless of the number of units consumed. |

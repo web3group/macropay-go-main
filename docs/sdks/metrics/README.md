@@ -1,0 +1,128 @@
+# Metrics
+
+## Overview
+
+### Available Operations
+
+* [Get](#get) - Get Metrics
+* [Limits](#limits) - Get Metrics Limits
+
+## Get
+
+Get metrics about your orders and subscriptions.
+
+Currency values are output in cents.
+
+**Scopes**: `metrics:read`
+
+### Example Usage
+
+<!-- UsageSnippet language="go" operationID="metrics:get" method="get" path="/v1/metrics/" -->
+```go
+package main
+
+import(
+	"context"
+	"os"
+	macropaygo "github.com/macrodeep/macropay-go"
+	"github.com/macrodeep/macropay-go/types"
+	"github.com/macrodeep/macropay-go/models/components"
+	"github.com/macrodeep/macropay-go/models/operations"
+	"log"
+)
+
+func main() {
+    ctx := context.Background()
+
+    s := macropaygo.New(
+        macropaygo.WithSecurity(os.Getenv("MACROPAY_ACCESS_TOKEN")),
+    )
+
+    res, err := s.Metrics.Get(ctx, operations.MetricsGetRequest{
+        StartDate: types.MustDateFromString("2025-03-14"),
+        EndDate: types.MustDateFromString("2025-03-18"),
+        Interval: components.TimeIntervalHour,
+        OrganizationID: macropaygo.Pointer(operations.CreateMetricsGetQueryParamOrganizationIDFilterStr(
+            "1dbfc517-0bbf-4301-9ba8-555ca42b9737",
+        )),
+    })
+    if err != nil {
+        log.Fatal(err)
+    }
+    if res.MetricsResponse != nil {
+        // handle response
+    }
+}
+```
+
+### Parameters
+
+| Parameter                                                                    | Type                                                                         | Required                                                                     | Description                                                                  |
+| ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| `ctx`                                                                        | [context.Context](https://pkg.go.dev/context#Context)                        | :heavy_check_mark:                                                           | The context to use for the request.                                          |
+| `request`                                                                    | [operations.MetricsGetRequest](../../models/operations/metricsgetrequest.md) | :heavy_check_mark:                                                           | The request object to use for the request.                                   |
+| `opts`                                                                       | [][operations.Option](../../models/operations/option.md)                     | :heavy_minus_sign:                                                           | The options for this request.                                                |
+
+### Response
+
+**[*operations.MetricsGetResponse](../../models/operations/metricsgetresponse.md), error**
+
+### Errors
+
+| Error Type                    | Status Code                   | Content Type                  |
+| ----------------------------- | ----------------------------- | ----------------------------- |
+| apierrors.HTTPValidationError | 422                           | application/json              |
+| apierrors.APIError            | 4XX, 5XX                      | \*/\*                         |
+
+## Limits
+
+Get the interval limits for the metrics endpoint.
+
+**Scopes**: `metrics:read`
+
+### Example Usage
+
+<!-- UsageSnippet language="go" operationID="metrics:limits" method="get" path="/v1/metrics/limits" -->
+```go
+package main
+
+import(
+	"context"
+	"os"
+	macropaygo "github.com/macrodeep/macropay-go"
+	"log"
+)
+
+func main() {
+    ctx := context.Background()
+
+    s := macropaygo.New(
+        macropaygo.WithSecurity(os.Getenv("MACROPAY_ACCESS_TOKEN")),
+    )
+
+    res, err := s.Metrics.Limits(ctx)
+    if err != nil {
+        log.Fatal(err)
+    }
+    if res.MetricsLimits != nil {
+        // handle response
+    }
+}
+```
+
+### Parameters
+
+| Parameter                                                | Type                                                     | Required                                                 | Description                                              |
+| -------------------------------------------------------- | -------------------------------------------------------- | -------------------------------------------------------- | -------------------------------------------------------- |
+| `ctx`                                                    | [context.Context](https://pkg.go.dev/context#Context)    | :heavy_check_mark:                                       | The context to use for the request.                      |
+| `opts`                                                   | [][operations.Option](../../models/operations/option.md) | :heavy_minus_sign:                                       | The options for this request.                            |
+
+### Response
+
+**[*operations.MetricsLimitsResponse](../../models/operations/metricslimitsresponse.md), error**
+
+### Errors
+
+| Error Type         | Status Code        | Content Type       |
+| ------------------ | ------------------ | ------------------ |
+| apierrors.APIError | 4XX, 5XX           | \*/\*              |

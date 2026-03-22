@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xargs file:*)",
+      "Bash(xargs -0 file --mime-type)",
+      "Bash(grep -ri polar . --include=*.go --include=*.yaml --include=*.yml --include=*.md --include=*.lock --include=*.mod)",
+      "Bash(sed -i '' -e 's/envVarPrefix: POLAR/envVarPrefix: MACROPAY/g' .speakeasy/gen.yaml)",
+      "Bash(sed -i '' -e 's/polar-oas/macropay-oas/g' -e 's/polar-oas-code-samples-go/macropay-oas-code-samples-go/g' .speakeasy/workflow.lock)",
+      "Bash(sed -i '' -e 's/target: polar/target: macropay/g' .github/workflows/sdk_publish.yaml)",
+      "Bash(git init:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}
